@@ -1,0 +1,35 @@
+name,img,birth,death,address,latlngColumn,fields,works
+人名,大頭,生,卒,位於,經緯(程式補完),領域,創作
+張衡,http://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Zhang_Heng.jpg/225px-Zhang_Heng.jpg,78,139,南陽,"33.004722?? 112.5275",天文學、數學、地震學、水力學、幾何學、民族志、機械工程、農曆、形上學、詩歌,地震儀、水力、渾天儀、圓周率、詩歌、宇宙模型、月食、日食
+祖沖之,http://upload.wikimedia.org/wikipedia/commons/thumb/0/07/昆山亭林公园祖冲之像.jpg/300px-昆山亭林公园祖冲之像.jpg,429,500,范陽郡-遒縣,"37?? 113.5",天文學、數學、曆法、機械,圓周率、約率、密率、近似值、割圓術
+李善蘭,http://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Li_Shanlan.jpg/300px-Li_Shanlan.jpg,1810,1882,浙江海寧縣-硤石鎮,"30.54?? 120.7",數學、翻譯,對數、微積分、李善蘭恆等式
+阿基米德,http://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Domenico-Fetti_Archimedes_1620.jpg/200px-Domenico-Fetti_Archimedes_1620.jpg,-287,-212,敘拉古,"37.5?? 14",數學、物理學、工程學、天文學、發明,流體靜力學、槓桿原理、阿基米德螺線
+賈比爾,http://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Jabir_ibn_Hayyan.jpg/220px-Jabir_ibn_Hayyan.jpg,721,851,波斯-圖斯,"36.454167?? 59.566944",煉金術、藥劑、哲學、天文學、占星、物理學,鹼、硝酸、王水、硝酸銀、氯化銨、升汞
+花拉子米,http://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Abu_Abdullah_Muhammad_bin_Musa_al-Khwarizmi_edit.png/250px-Abu_Abdullah_Muhammad_bin_Musa_al-Khwarizmi_edit.png,780,850,波斯-花剌子模,"41.333333?? 61",數學、天文學、地理學,十進制、算法、代數、三角學、世界地圖
+傑拉杜斯·麥卡托,http://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Mercator.jpg/200px-Mercator.jpg,1512,1594,比利時-佛蘭德,"51?? 4.5",地圖學、三角學、數學,麥卡托投影法
+伽利略·伽利萊,http://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Galileo.arp.300pix.jpg/225px-Galileo.arp.300pix.jpg,1564,1642,義大利佛羅倫斯公國比薩,"40.7?? 10.5",天文學、物理學、數學,運動科學、自由落體、慣性原理、望遠鏡、伽利略衛星、太陽黑子、日心說、圓規
+約翰內斯·克卜勒,http://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Johannes_Kepler_1610.jpg/225px-Johannes_Kepler_1610.jpg,1571,1630,神聖羅馬帝國-威爾,"48.750833?? 8.870556",天文學、占星學、數學、物理學、自然哲學,星表、行星、克卜勒定律、克卜勒猜想
+埃萬傑利斯塔·托里拆利,http://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Evangelista_Torricelli_-_Museo_di_Storia_Naturale_di_Firenze.JPG/220px-Evangelista_Torricelli_-_Museo_di_Storia_Naturale_di_Firenze.JPG,1608,1647,義大利法恩扎,"44.283333?? 11.883333",物理學、數學,拋體運動、擺線、望遠鏡、顯微鏡、氣壓計、真空、托里拆利定律、風
+羅伯特·波義耳,http://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Robert_Boyle_0001.jpg/220px-Robert_Boyle_0001.jpg,1627,1691,愛爾蘭,"53.5?? -7.633333",化學,氣體、燃燒、波義耳定律、元素、真空
+艾薩克·牛頓,http://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Sir_Isaac_Newton_by_Sir_Godfrey_Kneller%2C_Bt.jpg/280px-Sir_Isaac_Newton_by_Sir_Godfrey_Kneller%2C_Bt.jpg,1643,1727,英國英格蘭東密德蘭-林肯郡,"53.066667?? -0.183333",物理學、數學、天文學、鍊金術、自然哲學,牛頓力學、萬有引力、微分學、積分學、古典光學
+哥特佛萊德·萊布尼茲,http://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Gottfried_Wilhelm_von_Leibniz.jpg/200px-Gottfried_Wilhelm_von_Leibniz.jpg,1646,1716,神聖羅馬帝國-萊比錫,"51.33?? 12.45",數學、哲學、物理學、機械、政治學、法學、倫理學、神學、哲學、歷史學、語言學,微積分、機率論、二進制、拓撲學
+約翰·白努利,http://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Johann_Bernoulli.jpg/150px-Johann_Bernoulli.jpg,1677,1748,瑞士-巴塞爾,"47.5?? 7.6",數學,微積分、微分方程式
+奧托·馮·格里克,http://upload.wikimedia.org/wikipedia/commons/2/2c/Guericke.png,1602,1686,德國-馬德堡,"52.133333?? 11.616667",物理學、政治,真空泵、馬德堡半球、真空
+丹尼爾·白努利,http://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Danielbernoulli.jpg/225px-Danielbernoulli.jpg,1700,1782,荷蘭-格羅寧根,"53.216667?? 6.566667",物理學、數學、流體力學、醫學、經濟學、形上學、自然哲學,能量守恆、白努利方程式、風險趨避、邊際效用遞減
+夏爾·奧古斯丁·庫侖,http://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Coulomb.jpg/220px-Coulomb.jpg,1736,1806,法國-昂古萊姆,"45.648906?? 0.160847",物理學,庫侖定律、庫侖常數
+亞歷山德羅·伏打,http://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Alessandro_Volta.jpeg/225px-Alessandro_Volta.jpeg,1745,1827,米蘭公國-科莫,"45.75?? 9.08",物理學、化學、電磁學,電池
+安德烈-瑪麗·安培,http://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Ampere_Andre_1825.jpg/450px-Ampere_Andre_1825.jpg,1775,1836,法國-里昂,"45.7597?? 4.8422",電磁學、物理學、數學,安培定則、安培定律、電動力學
+阿莫迪歐·亞佛加厥,http://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Avogadro_Amedeo.jpg/225px-Avogadro_Amedeo.jpg,1776,1856,義大利-杜林,"45.066667?? 7.7",化學,亞佛加厥定律、亞佛加厥常數
+蓋歐格·西蒙·歐姆,http://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Ohm3.gif/200px-Ohm3.gif,1789,1854,德國-埃爾朗根,"49.5?? 11.03",物理學、電磁學,電路、電阻、電壓、電流、歐姆定律、歐姆位向定律、歐姆聽覺定律
+麥可·法拉第,http://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Michael_Faraday_-_Project_Gutenberg_eText_13103.jpg/150px-Michael_Faraday_-_Project_Gutenberg_eText_13103.jpg,1791,1867,英國-倫敦,"51.507222?? -0.1275",物理學、化學、電磁學,電磁感應、電解、電動馬達、本生燈
+愛達·勒芙蕾絲,http://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Ada_lovelace.jpg/200px-Ada_lovelace.jpg,1815,1852,英國-倫敦,"51.507222?? -0.1275",數學、計算機科學、程式設計,程式設計
+詹姆斯·克拉克·馬克士威,http://upload.wikimedia.org/wikipedia/commons/thumb/5/57/James_Clerk_Maxwell.png/150px-James_Clerk_Maxwell.png,1831,1879,英國-愛丁堡,"55.953056?? -3.188889",物理學、電磁學、古典電動力學、光學、統計物理學、數學,馬克士威方程組、電磁波
+德米特里·伊萬諾維奇·門得列夫,http://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/DIMendeleevCab.jpg/225px-DIMendeleevCab.jpg,1834,1907,俄國西伯利亞-托博爾斯克,"58.195278?? 68.258056",化學、物理學,元素週期表、原子量、光譜儀、毛細現象
+恩斯特·馬赫,http://upload.wikimedia.org/wikipedia/commons/3/32/Ernstmach.jpg,1838,1916,奧地利-捷克,"49.75?? 15.75",物理學、光學、聲學、哲學,都卜勒效應、生理學、科學哲學
+亨德里克·勞侖茲,http://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Hendrik_Antoon_Lorentz.jpg/225px-Hendrik_Antoon_Lorentz.jpg,1853,1928,荷蘭海爾德蘭省-阿納姆,"49.75?? 15.75",物理學、數學、電磁學、熱力學、流體力學、動力學、相對論,洛倫茲力、洛倫茲分佈、洛倫茲變換
+尼古拉·特斯拉,http://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Tesla_Sarony.jpg/225px-Tesla_Sarony.jpg,1856,1943,克羅埃西亞-斯米連,"45?? 16",物理學、電磁學、電機工程,交流電、特斯拉線圈、粒子束武器、特斯拉渦輪發動機、旋轉磁場、無線技術、地面固定波、雙線線圈、非同步電動機
+,,,,,,,
+阿爾伯特·愛因斯坦,http://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Albert_Einstein_%28Nobel%29.png/150px-Albert_Einstein_%28Nobel%29.png,1879,1955,德意志帝國符騰堡王國-烏爾姆市,"48.4?? 9.983333",物理學、相對論、光學,廣義相對論、狹義相對論、布朗運動、光電效應、質能等價、愛因斯坦場方程式、玻色-愛因斯坦統計、玻色–愛因斯坦凝聚、古典統一場論、EPR悖論
+恩里科·費米,http://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Enrico_Fermi_1943-49.jpg/300px-Enrico_Fermi_1943-49.jpg,1901,1954,義大利-羅馬,"41.9?? 12.5",物理學、電磁學、電機工程,費米-狄拉克統計、費米子、宇宙射線、β衰變、弱相互作用、核反應爐、曼哈頓計劃
+莫里斯·威爾金斯,http://upload.wikimedia.org/wikipedia/zh/thumb/7/77/Maurice_wilkins.jpg/200px-Maurice_wilkins.jpg,1916,2004,紐西蘭,"40.5?? 167.1",分子生物學,DNA、磷光、雷達、同位素分離、X光繞射
+羅莎琳·富蘭克林,http://upload.wikimedia.org/wikipedia/zh/thumb/9/97/Rosalind_Franklin.jpg/160px-Rosalind_Franklin.jpg,1920,1958,英國倫敦-諾丁山,"51.5096?? -0.2043",化學、物理學、物理化學、晶體學,DNA、照片51號、病毒、煤炭、石墨
