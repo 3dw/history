@@ -1,0 +1,87 @@
+@media (min-width: 321px) and (max-width: 480px) {
+   body {
+      font-size: 200%;
+   }
+
+   .noPhone, noPad {
+    display: none;
+   }
+
+   th, td {
+      max-width: 100px;
+   }
+}
+
+
+#star {
+  width: 20px;
+}
+
+.highlight {
+  background-color: rgba(255,255,0,1);
+}
+
+input {
+    width: 100px;
+    margin-right: 7px;
+}
+
+.info {
+  float: left;
+}
+.map, .join {
+    display: block;
+    /*width: 100%;*/
+    /*height: 450px;*/
+    padding: 3px;
+    overflow: auto;
+}
+.join {
+  width: 100%;
+}
+.map {
+  height: 450px;
+}
+
+.leaflet-marker-icon, img#fb,img#wiki {
+    border-radius: 60px;
+      -moz-border-radius: 60px;
+      -webkit-border-radius: 60px;
+
+        border: 3px white solid;
+}
+
+
+img#fb {            
+    width: 60px;
+    height: 60px;
+}
+
+img#wiki {
+    width: 80px;
+    height: 80px;
+}
+
+
+img.icon {
+    width: 20px;
+    height: 20px;
+}
+
+a {cursor: pointer; }
+
+body {
+    font-family: "Open Sans", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, 'Lucida Grande', 'LiHei Pro', 'Microsoft JhengHei', '微軟正黑體', 'Microsoft YaHei', '微軟雅黑體', sans-serif;
+    padding-top: 50px;
+}
+.fb-comments, .fb_iframe_widget span, .fb-comments iframe[style] {width: 100% !important;}
+
+.navbar-brand {
+  padding: 8px;
+}
+.navbar-brand h1 {
+  margin-top: 0px;
+}
+.main-container {
+  padding-top: 20px;
+}

@@ -1,0 +1,436 @@
+[ng\:cloak], [ng-cloak], .ng-cloak {
+  display: none !important;
+}
+
+/********/
+
+#skh-sidebarUL {
+      position: fixed;
+      padding: 5px;
+      top: 50px;
+      left: 0;
+      width: 20%;
+      min-width: 70px;
+      max-width: 200px;
+      z-index: 123456;
+      background-color: rgba(255,255,230,1);
+      border-radius: 20px;
+      max-height: 62%;
+      overflow: auto;
+}
+
+#skh-sidebarUL li {
+  display: block;
+  color: #80C345; text-align: center; margin-bottom: 15px;
+  display: inline-block;
+  position: relative;
+  max-height: 70px;
+  width: 100%;
+  padding-right: 10px;
+  overflow: hidden;
+}
+
+#skh-sidebarUL a {
+  color: #80C345;
+  display: inline-block;
+}
+
+#skh-sidebarUL .watch {
+  display: inline-block;
+  max-height: 70px;
+  width: 100%;
+  padding-right: 10px;
+  overflow: hidden;
+}
+
+#skh-sidebarUL .x {
+  position:absolute;
+  top:0; right:0;
+}
+
+
+#skh-warning {
+  position: relative; top: 32px; right:50px;
+}
+
+#skh-frame1 {
+    position: fixed;
+    bottom: 78px;
+    left: 0px;
+    width: 25%;
+    height: 40%;
+    z-index: 199999;  
+}
+#skh-frame2 {
+    position: fixed;
+    top: 78px;
+    left: 0px;
+    width: 25%;
+    height: 40%;
+    z-index: 199999;  
+}
+#skh-frame3 {
+    position: fixed;
+    top: 78px;
+    right: 0px;
+    width: 25%;
+    height: 40%;
+    z-index: 199999;  
+}
+#skh-frame4 {
+    position: fixed;
+    bottom: 78px;
+    right: 0px;
+    width: 25%;
+    height: 40%;
+    z-index: 199999;  
+}
+
+
+
+.leaflet-popup-content-wrapper {
+  max-height: 300px;
+  overflow: auto;
+
+}
+
+div.leaflet-label {
+  background: rgba(235, 235, 235, 1);
+  border-color: rgba(255, 255, 255,1);
+  color: rgba(150, 99, 255,1);
+  margin-left: 30px;
+  font-size: 140%;
+}
+
+.leaflet-marker-icon, img#fb,img#wiki {
+    border-radius: 60px;
+      -moz-border-radius: 60px;
+      -webkit-border-radius: 60px;
+      border: 3px rgba(155,155,255,1) ridge;
+}
+
+.leaflet-marker-icon:hover,img#fb:hover,img#wiki:hover {
+  z-index: 999999;
+}
+
+
+.invis {
+  display: none;
+}
+
+#star {
+  width: 20px;
+}
+
+.highlight {
+  background-color: rgba(255,255,0,1);
+}
+
+input {
+    width: 100px;
+    margin-right: 7px;
+}
+
+.info {
+  float: left;
+}
+
+
+img#fb {            
+    width: 60px;
+    height: 60px;
+}
+
+img#fb.small {
+    width: 40px;
+    height: 40px;  
+}
+
+img#fb.brown {
+  border: 3px rgba(255,180,90,1) ridge
+}
+
+
+img#wiki {
+    width: 80px;
+    height: 80px;
+}
+
+
+img.icon {
+    width: 30px;
+    height: 30px;
+}
+
+a {cursor: pointer; }
+
+body {
+    font-family: "Open Sans", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, 'Lucida Grande', 'LiHei Pro', 'Microsoft JhengHei', '微軟正黑體', 'Microsoft YaHei', '微軟雅黑體', sans-serif;
+    padding-top: 50px;
+}
+.fb-comments, .fb_iframe_widget span, .fb-comments iframe[style] {width: 100% !important;}
+
+.navbar {
+  z-index: 999999;
+}
+
+.navbar-brand {
+  padding: 8px;
+}
+.navbar-brand h1 {
+  margin-top: 0px;
+}
+.main-container {
+  padding-top: 20px;
+}
+
+th, td {  
+   min-width: 100px;
+   max-width: 250px;
+   vertical-align: middle;
+}
+
+.row,.col-md-8 {
+  vertical-align: middle;
+  text-align: center;
+}
+
+
+
+.leaflet-marker-icon {
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+
+    -moz-animation-name: blinker;
+    -moz-animation-duration: 1s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: 1;
+
+    animation-name: blinker;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+
+
+/************/
+
+.select, .navbar-form {
+  min-width: 300px;
+}
+
+
+.form-inline.form-down {
+  position: absolute;
+  top: 15px;
+  left: 65px;
+  z-index: 9999;
+}
+
+.navbar {
+  z-index: 99999;
+}
+
+
+.navbar h3 {
+  margin-top: 0px;
+}
+
+div.flag {
+  font-size: 140%;
+}
+
+
+div.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 20px;
+    z-index: 99999;
+}
+
+
+.skh-cell {
+    padding: 5px;
+    height: 150px;
+    text-align: center;
+    vertical-align: middle;
+    overflow: auto;
+}
+
+.table-responsive, .table-bordered  {
+    height: 100%;
+}
+
+
+#skh-sprite {
+  position: relative;
+}
+
+
+
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+   body {
+      font-size: 150%;
+   }
+   .navbar {
+      display: none;
+      height: 1px;
+   }
+   .noPhone, .noPad {
+      display: none;
+   }
+   .main-container {
+      padding-top: 0px;
+   }
+   .form-inline {
+      max-width: 250px;
+      text-align: center;
+      margin-left: 30px;
+   }
+   .form-control {
+      max-width: 150px;
+      display: inline-block;
+   }
+
+}
+ 
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-width : 320px)
+and (max-width : 480px) {
+   body {
+      font-size: 150%;
+   }
+   .navbar {
+      display: none;
+      height: 1px;
+   }
+   .noPhone, .noPad {
+      display: none;
+   }
+   .main-container {
+    padding-top: 0px;
+   }
+   .form-inline {
+      max-width: 250px;
+      text-align: center;
+      margin-left: 30px;
+   }
+   .form-control {
+      max-width: 150px;
+      display: inline-block;
+   }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+   body {
+      font-size: 150%;
+   }
+   .navbar-left {
+      margin-left: 20%;
+   }
+   .noPhone, noPad {
+    display: none;
+   }
+   .main-container {
+    padding-top: 0px;
+   }
+   th, td {
+      max-width: 100px;
+      min-width: none;
+   }
+}
+
+@media only screen
+and (min-width : 768px) {
+   .noPhone {
+      display: inherit;
+   }
+   .navbar-left {
+      margin-left: 5px;
+   }
+   th, td {      
+      max-width: none;
+      min-width: 100px;
+   }
+   th.noPhone, td.noPhone {
+      display: table-cell;
+
+   }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px) {
+   
+}
+ 
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px)
+and (orientation : landscape) {   
+   
+  
+}
+ 
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px)
+and (orientation : portrait) {
+   
+}
+ 
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+ 
+}
+ 
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+
+   body {
+      font-size: 150%;
+   }
+}
+ 
+/* iPhone 4 ----------- */
+
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+   body {
+      font-size: 150%;
+   }
+   .navbar {
+      max-width: 480px;
+   }
+   .navbar-left {
+      margin-left: 100%;
+   }
+   .noPhone, .noPad {
+    display: none;
+   }
+   .main-container {
+    padding-top: 0px;
+   }
+   th, td {
+      max-width: 100px;
+      min-width: 50px;
+   }
+}
+

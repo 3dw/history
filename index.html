@@ -1,52 +1,123 @@
 <!DOCTYPE html>
-<html>
-
+<html ng-app="demoapp">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="History : history open learning tools">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <title>歷史地圖 ➭ 古夢神遊</title>
 
-    <title>History</title>
+    <meta charset="UTF-8">
+    
+    <meta property="og:site_name" content="歷史地圖" />
+    <meta property="og:description" content="歷史地圖。" />
+    <meta property="og:title" content="歷史地圖" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://3dw.github.io/history/" />
+
+    <meta property="og:image" content="http://3dw.github.io/history/og_image.jpg" />
+
+
+    <link rel="stylesheet" href="module/src/leaflet.css" />    
+    <link rel="stylesheet" href="module/src/leaflet.ie.css" /> 
+    <link rel="stylesheet" href="module/src/bootstrap.css" />
+    <link rel="stylesheet" href="module/shackhand-1.0.0.css" />
+
+
+
   </head>
 
   <body>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/3dw/history">View on GitHub</a>
 
-          <h1 id="project_title">History</h1>
-          <h2 id="project_tagline">history open learning tools</h2>
+  
+ <div ng-controller="SKH-Ctrl">    
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/3dw/history/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/3dw/history/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
+  <div class="container main-container">
+    <div class="row">
+      <skh-finder></skh-finder>
+      
+      <div>
+          <span>公元<input type = "number" ng-model = "year" />年 || 
+            <a href = "{{year | toEra:'eu' | toWiki}}" target="_blank">{{year | toEra:'eu'}}</a> ||   
+            <a href = "{{year | toEra:'zh' | toWiki}}" target="_blank">{{year | toEra:'zh'}}</a>
+          </span>
+          <span class = "text-center" ng-click = "hideAncient = true">
+                <button ng-click = "speed = (speed > 0 && - 5) || speed - 5"><<</button>
+                <button ng-click = "speed = (speed > 0 && - 1) || speed - 1"><</button>
+                <button ng-hide = "speed == 0" ng-click = "speed = 0">||</button>
+                <button ng-show = "speed == 0" ng-click = "speed = (speed < 0 && 5) || speed + 1">></button>
+                <button ng-click = "speed = (speed < 0 && 5) || speed + 5">>></button>
+          </span>
+          
+          <span>
+          速度<input type = "number" ng-model = "speed" />
+          暫停<input type="checkbox" ng-model = "pause" />
+          僅顯示{{year}}年在世者<input type="checkbox" ng-model = "hideAncient" />
+          </span>
+
+        </div>
     </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1>
-<a name="history" class="anchor" href="#history"><span class="octicon octicon-link"></span></a>history</h1>
+      
+        
 
-<p>history open learning tools</p>
-      </section>
+    <hr>
+           
+       <skh-eaglemap></skh-eaglemap>
+
+
+      <div class = "row">
+       圖文出處：<a href = "http://zh.wikipedia.org" target = "_blank">維基百科</a>。僅為教育用途。如有版權疑義，<a href = "mailto: bestian@gmail.com">請e-mail作者</a>，即行移除。
+      </row>
+
+      <div class = "row">        
+        <skh-list></skh-list>
+      </div>
+
+        </div>
     </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">History maintained by <a href="https://github.com/3dw">3dw</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
 
-    
+
+       <script src="module/src/jquery-1.10.2.js"></script>
+    <script src="module/src/angular.min.js"></script>
+<!--    <script src="module/src/angular-route.min.js"></script> -->
+    <script src="module/src/angular-fullscreen.js"></script>
+
+    <script src="module/src/leaflet-0.7.1.js"></script>
+    <script src="module/src/leaflet.markercluster.js"></script>
+
+    <script src="module/src/angular-leaflet-directive.js"></script>
+
+    <link rel="stylesheet" href="module/src/leaflet.css" />
+    <link rel="stylesheet" href="module/src/leaflet.ie.css" />
+
+    <link rel="stylesheet" href="module/src/leaflet.label.css" />
+    <script src="module/src/leaflet.label.js"></script>
+
+
+<script src='module/src/firebase.js'></script>
+<script src='module/src/angularfire.min.js'></script>
+<script src='module/src/firebase-simple-login.js'></script>
+<script src="module/src/angular-easyfb.min.js"></script>
+<script src="module/src/ngStorage.js"></script>
+
+
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+<!--
+<script src="module/src/bootstrap.min.js"></script>
+<script src="module/src/bootstrap-select.min.js"></script>
+-->
+
+<script src='module/shackhand-1.0.0.js'></script>
+<script src='module/shackhand-directive-1.0.0.js'></script>
+<script src='module/shackhand-filter-1.0.0.js'></script>
+<script src='module/shackhand-controller-1.0.0.js'></script>
+
+
+<script src='index.js'></script>
 
   </body>
 </html>
+
+
+ 
