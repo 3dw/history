@@ -39,12 +39,11 @@ var SKH = function() {
                   iconSize: [(iconSize[whichGroup] || 60) * (zoomNow / 20)
                           , (iconSize[whichGroup] || 60) * (zoomNow / 20)],
 
-                  iconAnchor: [-(iconSize[whichGroup] || 60) * (zoomNow / 40)
-                          , (iconSize[whichGroup] || 60) * (zoomNow / 40)],
+                  iconAnchor: [0,0],
 
 
-                  labelAnchor: [(iconSize[whichGroup] || 60) * (zoomNow / 40)
-                          , -(iconSize[whichGroup] || 60) * (zoomNow / 40)],
+                  labelAnchor: [0
+                          ,0],
 
                   shadowUrl: '', //module/src/images/200px-Smiley.svg.png',
 

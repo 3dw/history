@@ -428,7 +428,6 @@ angular.module("shackhand").controller('SKH-Ctrl', function($scope, $skhDefault,
                 //for backend ethercalc using hackfoler format ==> hackmap
                 if (type == 'hackmap') {
                     var hackmap = url;
-                    var hackUrl = hackmap.replace(/([^\/])\/([^\/])/, '$1'+ '/_/' +'$2');
 
                     /*  get the .CSV data  ==>  auto complete latlng ==> POST back   */                   
 
@@ -439,7 +438,7 @@ angular.module("shackhand").controller('SKH-Ctrl', function($scope, $skhDefault,
                                     .success(function(data) { 
                                           console.log(data);
                                           $scope.bases = $scope.bases || [];
-                                          $scope.bases[n] = {hands: processHackMapData(data)};
+                                          $scope.bases[n] = {hands: processHackMapData(data, url)};
                                           
                                           $timeout(function(){
                                                         $scope.clearMarker();
@@ -458,7 +457,7 @@ angular.module("shackhand").controller('SKH-Ctrl', function($scope, $skhDefault,
 
                 if (type == 'ethercalc') {
 
-                    /*  get the .CSV data  ==>  auto complete latlng ==> POST back   */   
+                    /*  get the .CSV data  ==>  auto complete latlng ==> POST back   */  
 
 
 
@@ -469,7 +468,7 @@ angular.module("shackhand").controller('SKH-Ctrl', function($scope, $skhDefault,
                           .success(function(data) { 
                               console.log(data);
                               $scope.bases = $scope.bases || [];
-                              $scope.bases[n] = {hands: processEthercalcData(data)};                             
+                              $scope.bases[n] = {hands: processEthercalcData(data, url)};                             
 
 
                             })
@@ -484,6 +483,8 @@ angular.module("shackhand").controller('SKH-Ctrl', function($scope, $skhDefault,
 
                 function setElem (url,cell,text) {     // "https://ethercalc.org/_/farmer", A1, "mewMew"
 
+                            var hackUrl = url.replace(/([^\/])\/([^\/])/, '$1'+ '/_/' +'$2');
+
                             $.ajax({
                                 url: hackUrl,
                                 type: 'POST',
@@ -495,37 +496,38 @@ angular.module("shackhand").controller('SKH-Ctrl', function($scope, $skhDefault,
 
                 }
 
-                function backfire(hackUrl, shack, colNum) {
+                function backfire(url, shack, colNum) {
 
-                                            $http.get("http://query.yahooapis.com/v1/public/yql?q=select+%2A+from+geo.placefinder+where+text%3D%22"
-                                             + encodeURI(shack.address.replace(/\s/g,'')) +"%22+and+locale%3D%22zh_TW%22&format=json").success(function( d ) {
+                        $http.get("http://query.yahooapis.com/v1/public/yql?q=select+%2A+from+geo.placefinder+where+text%3D%22"
+                         + encodeURI(shack.address.replace(/\s/g,'')) +"%22+and+locale%3D%22zh_TW%22&format=json").success(function( d ) {
 
-                                                var lat, lng;
+                            var lat, lng;
 
-                                                try {
-                                                 lat = d.query.results.Result[0].latitude;
-                                                 lng = d.query.results.Result[0].longitude;
-                                                } catch(err) { }
+                            try {
+                             lat = d.query.results.Result[0].latitude;
+                             lng = d.query.results.Result[0].longitude;
+                            } catch(err) { }
 
-                                                if (!lat || !lng) {
-                                                    try {
-                                                     lat = d.query.results.Result.latitude;
-                                                     lng = d.query.results.Result.longitude;
-                                                    } catch(err) {  }
-                                                }
+                            if (!lat || !lng) {
+                                try {
+                                 lat = d.query.results.Result.latitude;
+                                 lng = d.query.results.Result.longitude;
+                                } catch(err) {  }
+                            }
 
-                                                if (lat && lng) {
-                                                    var backfireData = parseFloat(lat) + '?? ' + parseFloat(lng);
-                                                    
-                                                    setElem(hackUrl,
-                    ['A','B','C','D','E','F','G','H','I','J'][colNum || 6] + (shack.n + 1) , backfireData); // to Ethercalc
+                            if (lat && lng) {
+                                var backfireData = parseFloat(lat) + '?? ' + parseFloat(lng);
 
-                                                }
-                                            });
-                                        }
+                                
+                                setElem(url,
+['A','B','C','D','E','F','G','H','I','J'][colNum || 6] + (shack.n + 1) , backfireData); // to Ethercalc
+
+                            }
+                        });
+                    }
 
 
-                function processHackMapData (allText) {
+                function processHackMapData (allText, url) {
                         var allTextLines = allText.split(/\r\n|\n/);
                         var headers = allTextLines[0].split(',');
                         var list = [];
@@ -547,7 +549,7 @@ angular.module("shackhand").controller('SKH-Ctrl', function($scope, $skhDefault,
 
                             if (shack.address) {
                                     if (!shack.latlngColumn) {                                      
-                                        backfire(hackUrl, shack);
+                                        backfire(url, shack);
                                 } else {
                                     list.push(shack);
                                 }
@@ -556,7 +558,7 @@ angular.module("shackhand").controller('SKH-Ctrl', function($scope, $skhDefault,
                         return list;
                     }
 
-                    function processEthercalcData(allText){
+                    function processEthercalcData(allText,url){
                         var allTextLines = allText.split(/\r\n|\n/);
                         var headers = allTextLines[0].split(',');
                         var latlngColumnNum = headers.indexOf('latlngColumn');
@@ -590,8 +592,8 @@ angular.module("shackhand").controller('SKH-Ctrl', function($scope, $skhDefault,
 
 
                             if (shack.address) {
-                                    if (!shack.latlngColumn) {                                      
-//                                        backfire(hackUrl, shack, latlngColumnNum);
+                                    if (!shack.latlngColumn) {                                 
+                                        backfire(url, shack, latlngColumnNum);
                                 } else {
                                     list.push(shack);
                                 }
