@@ -241,11 +241,7 @@ angular.module("shackhand").controller('SKH-Ctrl', function($scope, $skhDefault,
 
                     if ($user.p.eagle) {
                         $scope.center = $scope.eagle;
-                    } else {
-                      $scope.center = $scope.local;
-                    }
-
-
+                    } 
 
 
             $scope.$watch('center.zoom', function(newValue, oldValue) {
