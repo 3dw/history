@@ -66,7 +66,10 @@
 
   <div class="container main-container">
     <div class="row">
-      <h1>公元{{year}}年</h1>
+      <h1>公元
+        <span ng-bind ="year"></span>
+        年
+      </h1>
       
       <div>
           <span>公元<input type = "number" ng-model = "year" />年 || 
