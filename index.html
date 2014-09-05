@@ -26,10 +26,37 @@
 
   <body>
 
-<nav>
+<nav class = "navbar navbar-inverse navbar-fixed-top">
   <div class=  "container">
-    <a href= "https://ethercalc.org/ans7j6cn1z">科</a>
-    <a href= "https://ethercalc.org/esnxmz3kmk">社</a>
+
+    <div class="navbar-header">
+      <ul class = "nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">編輯
+            <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">            
+            <li><a href= "https://ethercalc.org/pctvhbrpod">教育與心靈</a></li>
+            <li><a href= "https://ethercalc.org/ans7j6cn1z">數理與科技</a></li>
+            <li><a href= "https://ethercalc.org/esnxmz3kmk">社會運動</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">備份
+            <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href= "https://ethercalc.org/pctvhbrpod.csv">備份教</a></li>
+            <li><a href= "https://ethercalc.org/ans7j6cn1z.csv">備份科</a></li>
+            <li><a href= "https://ethercalc.org/esnxmz3kmk.csv">備份社</a></li>
+          </ul>
+        </li>
+
+
+
+      </ul>
+
+
+    </div>
   </div>
 
 </nav>
@@ -39,7 +66,7 @@
 
   <div class="container main-container">
     <div class="row">
-      <skh-finder></skh-finder>
+      <h1>公元{{year}}年</h1>
       
       <div>
           <span>公元<input type = "number" ng-model = "year" />年 || 

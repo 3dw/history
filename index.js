@@ -14,17 +14,21 @@
                     checkList: [],
                     whiteList: [],
                     
-                    layers: ['數學、科學與科技', '社會運動'],
-                    urls: ['https://ethercalc.org/ans7j6cn1z'
-                            ,'https://ethercalc.org/esnxmz3kmk'],
-                    layerIcons: ['https://www.moedict.tw/科.png?font=wt006',
+                    layers: ['教育與心靈','數理與科技', '社會運動'],
+                    urls: [
+                            'https://ethercalc.org/pctvhbrpod',
+                            'https://ethercalc.org/ans7j6cn1z',
+                            'https://ethercalc.org/esnxmz3kmk'],
+                    layerIcons: [
+                                'https://www.moedict.tw/教.png?font=wt006',
+                                'https://www.moedict.tw/科.png?font=wt006',
                                 'https://www.moedict.tw/社.png?font=wt006'],
-                    types: ['ethercalc', 'ethercalc'],
+                    types: ['ethercalc', 'ethercalc', 'ethercalc'],
 
-                    toFlags: [toFlag,toFlag],
-                    toLabels: [toLabel,toLabel],
+                    toFlags: [toFlag,toFlag,toFlag],
+                    toLabels: [toLabel,toLabel,toLabel],
 
-                    iconSize: [200,200],
+                    iconSize: [200,200,200],
 
                     logins:[],
                     headers:[],
