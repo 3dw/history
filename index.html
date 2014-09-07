@@ -75,8 +75,8 @@
       
       <div>
           <span>公元<input type = "number" ng-model = "year" />年 || 
-            <a href = "{{year | toEra:'eu' | toWiki}}" target="_blank">{{year | toEra:'eu'}}</a> ||   
-            <a href = "{{year | toEra:'zh' | toWiki}}" target="_blank">{{year | toEra:'zh'}}</a>
+            <a href = "{{year | toEra:'eu' | toWiki}}" target="_blank" ng-bind = "year | toEra:'eu'"></a> ||   
+            <a href = "{{year | toEra:'zh' | toWiki}}" target="_blank" ng-bind = "year | toEra:'zh'"></a>
           </span>
           <span class = "text-center" ng-click = "hideAncient = true">
                 <button ng-click = "speed = (speed > 0 && - 5) || speed - 5"><<</button>
@@ -89,7 +89,7 @@
           <span>
           速度<input type = "number" ng-model = "speed" />
           暫停<input type="checkbox" ng-model = "pause" />
-          僅顯示{{year}}年在世者<input type="checkbox" ng-model = "hideAncient" />
+          僅顯示<span ng-bid = "year"></span>年在世者<input type="checkbox" ng-model = "hideAncient" />
           </span>
 
         </div>
