@@ -29,7 +29,7 @@
                     toFlags: [toFlag,toFlag,toFlag,toFlag],
                     toLabels: [toLabel,toLabel,toLabel,toLabel],
 
-                    iconSize: [200,200,200,350],
+                    iconSize: [200,200,200,200],
 
                     logins:[],
                     headers:[],
