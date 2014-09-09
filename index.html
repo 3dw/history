@@ -65,9 +65,10 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">編輯
             <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">            
-            <li><a href= "https://ethercalc.org/pctvhbrpod">教育與心靈</a></li>
-            <li><a href= "https://ethercalc.org/ans7j6cn1z">數理與科技</a></li>
-            <li><a href= "https://ethercalc.org/esnxmz3kmk">社會運動</a></li>
+            <li><a href= "https://ethercalc.org/pctvhbrpod">教育心靈人</a></li>
+            <li><a href= "https://ethercalc.org/ans7j6cn1z">數理科技人</a></li>
+            <li><a href= "https://ethercalc.org/esnxmz3kmk">社會運動人</a></li>
+            <li><a href= "https://ethercalc.org/lj4ch3rmj0">社會事件</a></li>
           </ul>
         </li>
 
@@ -75,9 +76,10 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">備份
             <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href= "https://ethercalc.org/pctvhbrpod.csv">備份教</a></li>
-            <li><a href= "https://ethercalc.org/ans7j6cn1z.csv">備份科</a></li>
-            <li><a href= "https://ethercalc.org/esnxmz3kmk.csv">備份社</a></li>
+            <li><a href= "https://ethercalc.org/pctvhbrpod.csv">備份教人</a></li>
+            <li><a href= "https://ethercalc.org/ans7j6cn1z.csv">備份科人</a></li>
+            <li><a href= "https://ethercalc.org/esnxmz3kmk.csv">備份社人</a></li>
+            <li><a href= "https://ethercalc.org/lj4ch3rmj0.csv">備份社事</a></li>
           </ul>
         </li>
 
@@ -105,6 +107,9 @@
           <span><input type = "number" ng-model = "year" /> | 
             <a href = "{{year | toEra:'eu' | toWiki}}" target="_blank">{{year | toEra:'eu'}}</a> |  
             <a href = "{{year | toEra:'zh' | toWiki}}" target="_blank">{{year | toEra:'zh'}}</a>
+          <span><input type = "number" ng-model = "year" />年 |
+            <a href = "{{year | toEra:'eu' | toWiki}}" target="_blank" ng-bind = "year | toEra:'eu'"></a> |  
+            <a href = "{{year | toEra:'zh' | toWiki}}" target="_blank" ng-bind = "year | toEra:'zh'"></a>
           </span>
           <span class = "text-center" ng-click = "hideAncient = true">
 
@@ -132,7 +137,12 @@
           
           <span>
           速度<input type = "number" ng-model = "speed" />
+<<<<<<< HEAD
           僅顯示{{year}}年在世者<input type="checkbox" ng-model = "hideAncient" />
+=======
+          暫停<input type="checkbox" ng-model = "pause" />
+          僅顯示<span ng-bid = "year"></span>年在世者<input type="checkbox" ng-model = "hideAncient" />
+>>>>>>> FETCH_HEAD
           </span>
 
         </div>

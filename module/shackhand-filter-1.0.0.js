@@ -11,7 +11,7 @@ angular.module("shackhand").filter('getKeys',function(){
         }).filter('hideAncient',function(){
             return function(list, hideAncient,year,from,to){
                 if (hideAncient) list = list.filter(function(h){
-                    return (parseInt(h[from]) < year && (year < parseInt(h[to]) || !h[to] ))
+                    return (parseInt(h[from]) <= year && (year <= parseInt(h[to]) || !h[to] ))
                 });
 
                 return list;
