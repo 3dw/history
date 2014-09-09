@@ -90,7 +90,7 @@
                         if (n < 1644) return "明朝";
                         if (n < 1911) return "清朝";
                         if (n < 1949) return "中華民國";
-                        if (n >= 1949) return "臺海現狀";
+                        if (n >= 1949) return "兩岸分治";
                         break;
                     default:
                         return;

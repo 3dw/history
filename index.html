@@ -20,6 +20,36 @@
     <link rel="stylesheet" href="module/src/bootstrap.css" />
     <link rel="stylesheet" href="module/shackhand-1.0.0.css" />
 
+    <style type="text/css">
+
+      .skh-movie-right, .skh-movie-left, .skh-movie-pause {
+        display: inline-block;
+      }
+
+      .skh-movie-right, .skh-movie-left {
+        width: 0px;
+        height: 0px;        
+        border-top: 6px solid transparent;
+        border-bottom: 6px solid transparent;
+
+      }
+      .skh-movie-right {
+        border-left: 6px solid black;
+      }
+
+      .skh-movie-left {
+        border-right: 6px solid black;
+      }
+
+      .skh-movie-pause {
+        width: 8px;
+        height: 10px; 
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+      }
+
+    </style>
+
 
 
   </head>
@@ -72,21 +102,36 @@
       </h1>
       
       <div>
-          <span>公元<input type = "number" ng-model = "year" />年 || 
-            <a href = "{{year | toEra:'eu' | toWiki}}" target="_blank">{{year | toEra:'eu'}}</a> ||   
+          <span><input type = "number" ng-model = "year" /> | 
+            <a href = "{{year | toEra:'eu' | toWiki}}" target="_blank">{{year | toEra:'eu'}}</a> |  
             <a href = "{{year | toEra:'zh' | toWiki}}" target="_blank">{{year | toEra:'zh'}}</a>
           </span>
           <span class = "text-center" ng-click = "hideAncient = true">
-                <button ng-click = "speed = (speed > 0 && - 5) || speed - 5"><<</button>
-                <button ng-click = "speed = (speed > 0 && - 1) || speed - 1"><</button>
-                <button ng-hide = "speed == 0" ng-click = "speed = 0">||</button>
-                <button ng-show = "speed == 0" ng-click = "speed = (speed < 0 && 5) || speed + 1">></button>
-                <button ng-click = "speed = (speed < 0 && 5) || speed + 5">>></button>
+
+            <div class="btn-group">
+               <button class = "btn btn-default" ng-click = "speed = (speed > 0 && - 5) || speed - 5">
+                    <b class = "skh-movie-left"></b>
+                    <b class = "skh-movie-left"></b>
+                </button>
+                <button class = "btn btn-default" ng-click = "speed = (speed > 0 && - 1) || speed - 1">
+                    <b class = "skh-movie-left"></b>
+                </button>
+                <button class = "btn btn-default" ng-click = "speed = 0">
+                  <b class = "skh-movie-pause"></b>
+                </button>
+                <button class = "btn btn-default" ng-click = "speed = (speed < 0 && 5) || speed + 1">
+                    <b class = "skh-movie-right"></b>
+                </button>
+                <button class = "btn btn-default" ng-click = "speed = (speed < 0 && 5) || speed + 5">
+                    <b class = "skh-movie-right"></b>
+                    <b class = "skh-movie-right"></b>
+                </button>
+            </div>               
+
           </span>
           
           <span>
           速度<input type = "number" ng-model = "speed" />
-          暫停<input type="checkbox" ng-model = "pause" />
           僅顯示{{year}}年在世者<input type="checkbox" ng-model = "hideAncient" />
           </span>
 
