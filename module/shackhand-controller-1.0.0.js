@@ -11,6 +11,8 @@ angular.module("shackhand").controller('SKH-Ctrl', function($scope, $skhDefault,
                 { myWatches: [] }
             );
 
+            $scope.Math = window.Math;
+
             $scope.myWatches = $localStorage.myWatches;
             $scope.myWatches.remove = function() {
                             var what, a = arguments, L = a.length, ax;

@@ -76,6 +76,9 @@
           <span><input type = "number" ng-model = "year" /> | 
             <a href = "{{year | toEra:'eu' | toWiki}}" target="_blank">{{year | toEra:'eu'}}</a> |  
             <a href = "{{year | toEra:'zh' | toWiki}}" target="_blank">{{year | toEra:'zh'}}</a>
+          <span><input type = "number" ng-model = "year" />年 |
+            <a href = "{{year | toEra:'eu' | toWiki}}" target="_blank" ng-bind = "year | toEra:'eu'"></a> |  
+            <a href = "{{year | toEra:'zh' | toWiki}}" target="_blank" ng-bind = "year | toEra:'zh'"></a>
           </span>
           <span class = "text-center" ng-click = "hideAncient = true">
 
@@ -132,13 +135,18 @@
     </div>
 
     <div id ="timeline">
+
         <span ng-repeat = "k in [] | range:2014:-2000:20"
           ng-click = "$parent.year = k"
           ng-mouseover = "$parent.year = k"
+
           ng-style = "{width: 4000 / 240 * 2 / 100 + '%'}">
-            <b ng-if = "Math.floor(year - k) == 0" class = "downArrow"></b>
-            <b ng-if = "Math.floor(year - k) == 0" class = "upArrow"></b>
+
+            <b ng-if = "Math.floor(year / 20 - k) == 0" class = "downArrow"></b>
+            <b ng-if = "Math.floor(year / 20 - k) == 0" class = "upArrow"></b>
+
         </span>
+
     </div>
 
 

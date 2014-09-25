@@ -22,22 +22,16 @@
                     checkList: [],
                     whiteList: [],
                     
-                    layers: ['教育心靈人','數理科技人', '社會喚醒人', '社會事件'],
+                    layers: ['社會喚醒人'],
                     urls: [
-                            'https://ethercalc.org/pctvhbrpod',
-                            'https://ethercalc.org/ans7j6cn1z',
-                            'https://ethercalc.org/esnxmz3kmk',
-                            'https://ethercalc.org/lj4ch3rmj0'],
+                            'https://ethercalc.org/esnxmz3kmk'],
                     layerIcons: [
-                                'https://www.moedict.tw/教.png?font=wt006',
-                                'https://www.moedict.tw/科.png?font=wt006',
                                 'https://www.moedict.tw/社.png?font=wt006'],
-                    types: ['ethercalc', 'ethercalc', 'ethercalc', 'ethercalc'],
+                    types: ['ethercalc', 'ethercalc', ],
 
-                    toFlags: [toFlag,toFlag,toFlag,toFlag],
-                    toLabels: [toLabel,toLabel,toLabel,toLabel],
-
-                    iconSize: [200,200,200,200],
+                    toFlags: [toFlag],
+                    toLabels: [toLabel],
+                    iconSize: [200],
 
                     logins:[],
                     headers:[],
